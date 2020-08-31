@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Latitude Analysis Dashboard with Attitude</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar fixed-top p-0 shadow row">
+    <a class="navbar-brand col-md-2 offset-md-1" href="index.html"><strong>Latitude</strong>
+    </a>
+    <div class="nav nav-masthead col-md-1 no-gutters show"></div>
+      <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button"
+      aria-haspopup="true" aria-expanded="true">Plots<span class="caret"></span>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="dropdown-toggle">
+        <a class="dropdown-item" href="html-webvis-bc-vizualizations.html">Max Temperature</a>
+        <a class="dropdown-item" href="html-webvis-bc-humidity.html">Humidity</a>
+        <a class="dropdown-item" href="html-webvis-bc-cloudiness.html">Cloudiness</a>
+        <a class="dropdown-item" href="html-webvis-bc-windspeed.html">Windspeed</a>
+      </div>
+    </div>
+    <div class="nav nav-masthead col-md-1 no-gutters">
+      <a class="nav-link" href="#comparison"><strong>Comparison</strong>
+      </a>
+    </div>
+    <div class="nav nav-masthead col-md-1 no-gutters">
+      <a class="nav-link" href="#data"><strong>Data</strong></a>
+    </div>
+  </nav>
+<main role="main" class="container">
+  <div class="row">
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="my-3 p-4 bg-white shadow-sm border-top border-left border-right border-bottom">
+            <div class="summary-head border-gray pb-2 mb-0"><strong>Summary: Latitude vs. X</strong> </div>
+
+
+              <img class="mr-3" src="Resources/assets/images/Fig1.png" alt="" width="400" height="350"> 
+                <p>The purpose of this project was to analyze how weather 
+                changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to 
+                assemble a dataset on over 500 cities.
+
+                After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at include:
+                temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis,
+                as well as explanations and descriptions of any trends and correlations witnessed.
+                </p>
+          </div>
+        </div>
+        <div class="col-lg-4.15">
+            <div class="my-3 p-4 bg-white shadow-sm border-top border-left border-right border-bottom">
+                <h1 class="viz-head border-gray pb-2 mb-0"><strong>Visualizations</strong> </h1>
+                  <div class="col-lg-4.15">
+                    <a target="_blank" href="html-homework-rt-visualizations.html">                     
+                      <img class="mr-3" src="Resources/assets/images/Fig1.png" alt="" width="150" height="150"> </a>
+                    <a target="_blank" href="html-homework-rt-humidity.html">    
+                      <img class="mr-3" src="Resources/assets/images/Fig2.png" alt="" width="150" height="150"></a>
+                  </div> 
+                  <div class="col-lg-4.15">
+                    <a target="_blank" href="html-homework-rt-cloudiness.html">  
+                      <img class="mr-3" src="Resources/assets/images/Fig3.png" alt="" width="150" height="150"></a> 
+                    <a target="_blank" href="html-homework-rt-windspeed.html"> 
+                      <img class="mr-3" src="Resources/assets/images/Fig4.png" alt="" width="150" height="150"></a>
+                  </div> 
+                </div>
+      </div>
+      </div>
+      </main>    
+  </div>
+</main>
+
+</body>
+
+ 
