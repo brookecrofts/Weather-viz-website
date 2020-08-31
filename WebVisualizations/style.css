@@ -50,3 +50,11 @@ float: right;
 .dropdown-toggle{
   display: inline-block;
 }
+
+  .summary-head {
+    padding-top: .75rem;
+    color: rgb(157, 54, 188);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+
+}
