@@ -58,3 +58,11 @@ float: right;
     font-family: "Times New Roman", Times, serif;
 
 }
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+table {
+  border-spacing: 2px;
+}
