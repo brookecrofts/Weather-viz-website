@@ -7,18 +7,22 @@
   <title>Latitude Analysis Dashboard with Attitude</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <nav class="navbar fixed-top p-0 shadow row">
     <a class="navbar-brand col-md-2 offset-md-1" href="index.html"><strong>Latitude</strong>
     </a>
     <div class="nav nav-masthead col-md-1 no-gutters">
-      <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button"
-        aria-haspopup="true" aria-expanded="false">
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <a class="dropdown-toggle show" href="#" data-toggle="dropdown" role="button"
+        aria-haspopup="true" aria-expanded="true">
         Plots
         <span class="caret"></span>
       </a>
-      <div class="dropdown-menu" aria-labelledby="dropdown-toggle">
+      <div class="dropdown-menu" aria-labelledby="dropdown-toggle show">
         <a class="dropdown-item" href="htmlhw-bc-visualizations.html">Max Temperature</a>
         <a class="dropdown-item" href="htmlhw-bc-humidity.html">Humidity</a>
         <a class="dropdown-item" href="htmlhw-bc-cloudiness.html">Cloudiness</a>
@@ -40,12 +44,14 @@
         <div class="summary-head border-gray pb-2 mb-0"><strong>Summary: Latitude vs. X</strong> 
         </div>
         <img class="mr-3" src="Resources/assets/images/Fig1.png" alt="" width="400" height="350"> 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-          cillum dolore eu fugiat nulla pariatur. 
-                  
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p>The purpose of this project was to analyze how weather changes as you get closer or further 
+          from the equator.  The data for this analysis was created by an API call to OpenWeatherMap to
+          gather a dataset of over 500 random cities.</p>
+
+         <p>Once the dataset was complete, we used Matplotlib to plot various aspects of weather vs. latitude. 
+          Factors considered were: temperature, humidity, cloudiness and wind speed.  This site provides the 
+          source data pulled from a csv file into html and placed in an easy-to-read table format.  Click on 
+          each of the photos for decriptions of any trends or correlations discovered.
         </p>
           </div>
         </div>

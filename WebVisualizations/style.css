@@ -13,13 +13,13 @@ body {
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+.topnav {
 float: left;
 color: #f2f2f2;
 text-align: center;
 padding: 14px 16px;
 text-decoration: none;
-font-size: 17px;
+font-size: 22px;
 }
 
 /*color the picturebox*/
@@ -29,18 +29,26 @@ font-size: 17px;
   padding-right: 5px;
   padding-bottom: 5px;
   padding-left: 5px;
-  background-color: rgb(188, 54, 166);
+  background-color: rgb(157, 54, 188);
 }
+
 .dropdown-toggle{
   display: inline-block;
 }
 
-  .summary-head {
-    padding-top: .75rem;
-    color: rgb(157, 54, 188);
-    font-size: 2rem;
-    font-family: "Times New Roman", Times, serif;
+.summary-head {
+  padding-top: .75rem;
+  color: rgb(157, 54, 188);
+  font-size: 3rem;
+  font-family: "Times New Roman", Times, serif;
 
+}
+/* change visualizations to smaller font*/
+.viz-head{
+  padding-top: .75rem;
+  color: rgb(157, 54, 188);
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
 }
 tr {
   display: table-row;
@@ -50,3 +58,22 @@ tr {
 table {
   border-spacing: 2px;
 }
+
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .post {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .navbar {
+    visibility: hidden;
+  }
+
+  #nav-select {
+    visibility: visible;
+  }
